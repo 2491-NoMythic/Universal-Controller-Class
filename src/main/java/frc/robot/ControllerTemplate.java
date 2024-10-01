@@ -2,10 +2,10 @@ package frc.robot;
 
 import java.util.HashMap;
 /*
- * Up Icon
- * Left Icon
- * Right Icon
- * Down Icon
+ * Top Face Button
+ * Left Face Button
+ * Right Face Button
+ * Bottom Face Button
  * 
  * D-Pad N
  * D-Pad NE
@@ -66,9 +66,11 @@ public class ControllerTemplate{
         ButtonMap.put("", 21);     
         
     }
-
+    /**
+     * Sets the controller currently in use.
+     * @param 
+     */
     public void SetCurrentController(Controllers NewController){
         currentController = NewController;
     }
 }
-    
