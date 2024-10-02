@@ -41,34 +41,35 @@ public class ControllerTemplate{
     }
 
     public ControllerTemplate(){
+        //This maps the buttons used in the code to their numerical keys, which are used for actually mapping controllers.  
         HashMap<String, Integer>  ButtonMap = new HashMap<String, Integer>(); 
         
-        ButtonMap.put("Power Button", 1);
-        ButtonMap.put("", 2); 
-        ButtonMap.put("", 3);        
-        ButtonMap.put("", 4);
-        ButtonMap.put("", 5);
-        ButtonMap.put("", 6);
-        ButtonMap.put("", 7);
-        ButtonMap.put("", 8);
-        ButtonMap.put("", 9);
-        ButtonMap.put("", 10);
-        ButtonMap.put("", 11);
-        ButtonMap.put("", 12);
-        ButtonMap.put("", 13);
-        ButtonMap.put("", 14);
-        ButtonMap.put("", 15);
-        ButtonMap.put("", 16);
-        ButtonMap.put("", 17);
-        ButtonMap.put("", 18);
-        ButtonMap.put("", 19);
-        ButtonMap.put("", 20);
-        ButtonMap.put("", 21);     
+        ButtonMap.put("Top Face Button", 1);
+        ButtonMap.put("Left Face Button", 2); 
+        ButtonMap.put("Right Face Button", 3);        
+        ButtonMap.put("Down Face Button", 4);
+        ButtonMap.put("D-Pad N", 5);
+        ButtonMap.put("D-Pad NE", 6);
+        ButtonMap.put("D-Pad E", 7);
+        ButtonMap.put("D-Pad SE", 8);
+        ButtonMap.put("D-Pad S", 9);
+        ButtonMap.put("D-Pad SW", 10);
+        ButtonMap.put("D-Pad W", 11);
+        ButtonMap.put("D-Pad NW", 12);
+        ButtonMap.put("Left Stick Button", 13);
+        ButtonMap.put("Right Stick Button", 14);
+        ButtonMap.put("Left Bumper", 15);
+        ButtonMap.put("Right Bumper", 16);
+        ButtonMap.put("Left Trigger", 17);
+        ButtonMap.put("Right Bumper", 18);
+        ButtonMap.put("Left Extra Button", 19);
+        ButtonMap.put("Right Extra Button", 20);
+        ButtonMap.put("Power Button", 21);     
         
     }
     /**
      * Sets the controller currently in use.
-     * @param 
+     * @param NewController: the controller.
      */
     public void SetCurrentController(Controllers NewController){
         currentController = NewController;
